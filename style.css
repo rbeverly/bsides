@@ -1,0 +1,148 @@
+body {
+    background-color: #222222;
+    color: ghostwhite;
+    max-width: 900px;
+}
+
+.textbrick, .schedule, .modal-content {
+    font-family: "Lucida Console", monospace;
+    font-size: 0.9em;
+    color: #FF8606;
+    letter-spacing: 0.11em;
+    line-height: 1.15em;
+}
+
+.lable strong {
+    font-family: "Lucida Console", monospace;
+    font-size: 1.25em;
+    color: gray;
+}
+
+.tiny {
+    font-size: 0.75em;
+}
+
+.schedule {
+    padding-left: 3em;
+    padding-top: 2em;
+    width: 900px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000055;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #000000;
+  margin: 10% 0px 0px 126px;
+  padding: 0;
+  width: 700px;
+  border-radius: 2px;
+}
+
+.modal-content p {
+    padding: 16px;
+}
+
+.m-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #BCAAC3;
+    padding-bottom: 0px !important;
+}
+
+.m-spacetime {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+td, th {
+    padding: 1em;
+    vertical-align: super;
+}
+
+td strong {
+    line-height: 2em;
+    color: #BCAAC3;
+}
+
+th {
+    text-align: left;
+    background-color: #5D3672;
+}
+
+tr:nth-child(even) {
+    background-color: #33263B;
+}
+
+tr:hover {
+    background-color: #472056;
+}
+
+td:hover {
+    background-color: #5D3672;
+}
+
+p {
+    padding-left: 3em;
+    padding-top: 2em;
+}
+
+a:link {
+    color: #B39FBE;
+}
+
+a:visited {
+    color: #B39FBE;
+}
+
+a:hover {
+
+}
+
+.menulogo {
+    height: 2.5em;
+}
+
+#menu {
+    padding: 5px;
+    margin-left: 30px;
+    font-family: "Lucida Console", monospace;
+    font-size: 1.5em;
+
+}
+
+#menu a {
+    padding: 8px;
+    padding-top: 48px;
+}
+
+#menu .logolink {
+}
+
+#menu a:link {
+    color: ghostwhite;
+}
+
+#menu a:visited {
+    color: ghostwhite;
+}
+
+#menu a:hover {
+    color: #FF8606;
+    background-color: #33263B;
+}
+
+#menu a:active {
+    color: #BCAAC3;
+}

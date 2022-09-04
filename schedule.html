@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>BSides 2022 Schedule</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <topmenu></topmenu>
+    <div>
+        <table id="schedule_t" class="schedule">
+
+            <colgroup>
+                <col span="1">
+                <col span="3" style="width: 245px;">
+            </colgroup>
+            
+            <tr>
+                <th>Time</th>
+                <th>Main</th>
+                <th>Room 1</th>
+                <th>Room 2</th>
+            </tr>
+
+            <tr>
+                <td>7:00am - 7:45am</td>
+
+                <td onclick="show_modal('reg')">Registration</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>7:45am - 8:00am</td>
+
+                <td onclick="show_modal('wel')">Welcome and Introduction</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>8:00am</td>
+
+                <td onclick="show_modal('8main')">
+                <strong>Dr. Sunny Wear</strong><br>
+                Swiss Army Knife Tips for Your Cyber Success (Keynote)
+                </td>
+
+                <td>
+                <strong></strong><br>
+                
+                </td>
+
+                <td>
+                <strong></strong><br>
+                
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>9:00am</td>
+
+                <td onclick="show_modal('9main')">
+                <strong>Wilson Bautista</strong><br>
+                Challenges in Securing the Metaverse
+                </td>
+
+                <td onclick="show_modal('9r1')">
+                <strong>Nicholas Carroll</strong><br>
+                Chasing Cyber's Tail
+                </td>
+
+                <td onclick="show_modal('9r2')">
+                <strong>Derek Scheller</strong><br>
+                Resiliency & Burnout
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>10:00am</td>
+
+                <td onclick="show_modal('10main')">
+                <strong>Christopher Peacock</strong><br>
+                TTP Pyramid
+                </td>
+
+                <td onclick="show_modal('10r1')">
+                <strong>Michael-Angelo Zummo</strong><br>
+                Threat Hunting in Practice: How to Protect Critical Assets Through Systematic, Proactive Threat Intelligence
+                </td>
+
+                <td onclick="show_modal('10r2')">
+                <strong>Will Robus</strong><br>
+                The Cyber Immune System - A Mental Model
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>11:00am</td>
+
+                <td onclick="show_modal('11main')">
+                <strong>Alan Cook</strong><br>
+                The Hacks That Made Us
+                </td>
+
+                <td onclick="show_modal('11r1')">
+                <strong>Mitchell Broadwater</strong><br>
+                Context Matters: How to Become the Cyber Detective of Your Favorite Noir Film
+                </td>
+
+                <td>
+                Lunch / Break Room
+                </td>
+                
+            </tr>
+
+            <tr>
+
+                <td>12:00pm</td>
+                
+                <td onclick="show_modal('12main')">
+                <strong>Rab Beverly</strong><br>
+                Rickroll Workshop
+                </td>
+
+                <td onclick="show_modal('12r1')">
+                <strong>Michael Ferree</strong><br>
+                Removing the Human Factor From Phishing
+                </td>
+
+                <td>
+                Lunch / Break Room
+                </td>
+                
+            </tr>
+
+            <tr>
+
+                <td>1:00pm</td>
+                
+                <td onclick="show_modal('1main')">
+                <strong>Thad Wellin</strong><br>
+                Cloud Security Best Practices
+                </td>
+
+                <td onclick="show_modal('1r1')">
+                <strong>Michael Brown</strong><br>
+                Critical Security Controls: Not From SANS, Not 20, Discuss!!
+                </td>
+
+                <td>
+                Lunch / Break Room
+                </td>
+                
+            </tr>
+
+            <tr>
+
+                <td>2:00pm</td>
+                
+                <td onclick="show_modal('2main')">
+                <strong>Peter Luo</strong><br>
+                The Journey of Security Automation
+                </td>
+
+                <td onclick="show_modal('2r1')">
+                <strong>Daniel Fernandez</strong><br>
+                Mind the Gap: Becoming a Product Manager in InfoSec
+                </td>
+
+                <td onclick="show_modal('2r2')">
+                <strong>Ivan Marchany</strong><br>
+                How to Build a Cyber Home Lab
+                </td>
+                
+            </tr>
+
+            <tr>
+
+                <td>3:00pm</td>
+                
+                <td onclick="show_modal('3main')">
+                Closing Keynote
+                </td>
+
+                <td>
+                <strong></strong><br>
+                
+                </td>
+
+                <td>
+                <strong></strong><br>
+                
+                </td>
+                
+            </tr>
+
+        </table>
+    </div>
+
+    <div id="reg" class="modal" onclick="hide_modal('reg')">
+        <div class="modal-content">
+            <p class="m-title">Registration</p>
+            <p class="m-spacetime">
+                7:00am Main Room
+            </p>
+            <p>
+                Wherein the humans are registered for the conference. Non-humans may wait in the line marked 'solve this CAPTCHA.'
+            </p>
+        </div>
+    </div>
+
+    <div id="wel" class="modal" onclick="hide_modal('wel')">
+        <div class="modal-content">
+            <p class="m-title">Welcome and Introduction</p>
+            <p class="m-spacetime">
+                7:45am Main Room
+            </p>
+            <p>
+                Wherein the humans are welcomed to the conference. Non-humans are also welcomed if they have made it through the
+                CAPTCHA line.
+            </p>
+        </div>
+    </div>
+
+    <div id="8main" class="modal" onclick="hide_modal('8main')">
+        <div class="modal-content">
+            <p class="m-title">Swiss Army Knife Tips for Your Cyber Success</p>
+            <p class="m-spacetime">
+                8:00am Main Room, Dr. Sunny Wear
+            </p>
+            <p>
+                Given experience in IT and Security for almost 30 years, Dr. Sunny provides some words of wisdom 
+                and tips on how to get the most out of your cybersecurity career. Join for some thought-provoking 
+                nuggets as well as a few laughs in this instructional, yet entertaining look at how to best deal with 
+                some challenges of this career.
+            </p>
+        </div>
+    </div>
+
+    <div id="9main" class="modal" onclick="hide_modal('9main')">
+        <div class="modal-content">
+            <p class="m-title">Challenges in Securing The Metaverse</p>
+            <p class="m-spacetime">
+                9:00am Main Room, William Bautista
+            </p>
+            <p>
+                It started with Massively Multiplayer Online Role-Playing Games and now we have augmented reality, virtual 
+                reality, and Decentraland. We are altering the way that we use technology on a daily basis and with the 
+                onset of Web 3 technologies, are we really prepared personally and/or professionally to meet the coming 
+                challenges? In this presentation, we will explore some of the hot topics and challenges that are being 
+                observed through reporting in this space. It is the hope of the presenter to open up the floor for conversations 
+                in the conference in how we can address these challenges now so that we can be ahead of the threats in the future.
+            </p>
+        </div>
+    </div>
+
+    <div id="9r1" class="modal" onclick="hide_modal('9r1')">
+        <div class="modal-content">
+            <p class="m-title">Chasing Cyber's Tail</p>
+            <p class="m-spacetime">
+                9:00am Room 1, Nicholas Carroll
+            </p>
+            <p>
+                In "Chasing Cyber's Tail" we'll discuss the reason some organizations constantly find themselves behind 
+                attackers in their environment by constantly chasing the latest IOCs and how leaders can adapt their current 
+                threat intelligence focuses to cast a better net for attacker behavior in their environment, giving their team 
+                a chance to head attackers off. We'll investigate how summiting even one or two rungs of the Pyramid of Pain 
+                can pay dividends for creating a proactive hunting program and look at real world examples from ransomware 
+                groups for the difference in outcomes that follows shifting focusing on IOCs and TTPs in an environment.
+            </p>
+        </div>
+    </div>
+
+    <div id="9r2" class="modal" onclick="hide_modal('9r2')">
+        <div class="modal-content">
+            <p class="m-title">Resiliency & Burnout</p>
+            <p class="m-spacetime">
+                9:00am Room 2, Derek Scheller
+            </p>
+            <p>
+                By learning about resiliency and how to develop it you can then utilize those tools to prevent burnout 
+                and other mental health issues like depression and stress.
+            </p>
+        </div>
+    </div>
+
+    <div id="10main" class="modal" onclick="hide_modal('10main')">
+        <div class="modal-content">
+            <p class="m-title">TTP Pyramid</p>
+            <p class="m-spacetime">
+                10:00am Main Room, Christopher Peacock
+            </p>
+            <p>
+                This talk is geared to those seeking to make Cyber Threat Intelligence (CTI) actionable through emulation 
+                and detection engineering. In the discussion, we will cover the expansion of David Bianco's Pyramid of 
+                Pain, the Tactics, Techniques, and Procedures (TTP) Pyramid. We will cover a brief history of cyber 
+                intelligence, its evolution, and how MITRE ATT&CK fits in. We then will show what each level is 
+                representative of and how it can be leveraged. Finally, we will highlight what getting to the procedure 
+                level means, along with how to use procedural level intelligence in an actionable manner effectively.
+            </p>
+        </div>
+    </div>
+
+    <div id="10r1" class="modal" onclick="hide_modal('10r1')">
+        <div class="modal-content">
+            <p class="m-title">Threat Hunting In Practice</p>
+            <p class="m-spacetime">
+                10:00am Room 1, Michael-Angelo Zummo
+            </p>
+            <p>
+                Today’s organizations face unprecedented challenges in battling cyber threats. Between increasingly 
+                sophisticated cybercriminals, rapidly expanding digital assets and attack surfaces, and a legal landscape 
+                that threatens to punish those companies that fail to adequately protect their customers’ privacy rights, 
+                it’s not hard to see why cybersecurity professionals are buckling under the mounting pressure. Within this 
+                complex new cyber threat battleground, organizations cannot afford to continue relying on passive, reactive 
+                defense, and instead, must leverage the tools and methodologies to facilitate a truly proactive and 
+                preemptive cyber defensive program. Threat hunting is a powerful tool enabling companies to take a proactive 
+                approach to build organizational cyber resilience. By seeking out the highest-priority potential cyber 
+                threats rather than waiting for evidence of them to appear, threat hunting provides a proven, systematic 
+                way for an organization to defend itself from the most concerning risks, reducing dwell times and 
+                accelerating remediation and response. This session is an in-depth technical demonstration of the threat 
+                hunting process on the deep and dark web which will demonstrate new techniques and innovative threat hunting 
+                tools that empower organizations to proactively block threats before they can materialize into catastrophic 
+                cyber incidents. Michael-Angelo Zummo, Senior Threat Intel Specialist at Cybersixgill, will demonstrate 
+                the best practices for performing an effective threat hunt.
+            </p>
+        </div>
+    </div>
+
+    <div id="10r2" class="modal" onclick="hide_modal('10r2')">
+        <div class="modal-content">
+            <p class="m-title">The Cyber Immune System - A Mental Model </p>
+            <p class="m-spacetime">
+                10:00am Room 2, Will Robus
+            </p>
+            <p>
+                Much like the human body, organizations are complex systems that live and breathe. In order to stay healthy 
+                and at our full potential, our bodies have evolved a robust and some-times anti-fragile immune system. The 
+                system uses filtration, identification of invaders, anti-bodies, T-cells, white-blood cells, and even blood 
+                clotting. These tools work in harmonic unison to defend against outside invaders getting access to our core 
+                systems, as well as search and destroy anything inside of our bodies that is meant to do us harm. As security 
+                practitioners and security leaders, it is our sole purpose to ensure the immune system of our organizations 
+                are operating at the highest possible level. It is not a question of will a cyberthreat become viable inside 
+                of the environment you protect, but when. Your ultimate success is directly tied to the short term and long 
+                term health of the security "immune" systems in place to keep your organization safe from harm. In this talk 
+                we'll explore the parallels between the human immune system and cybersecurity threat detection/response 
+                systems - with the goal of giving you a new way to look at the future of cybersecurity inside of your 
+                organization.
+            </p>
+        </div>
+    </div>
+
+    <div id="11main" class="modal" onclick="hide_modal('11main')">
+        <div class="modal-content">
+            <p class="m-title">The Hacks That Made Us</p>
+            <p class="m-spacetime">
+                11:00am Main Room, Alan Cook
+            </p>
+            <p>
+                Break down some of the iconic hacks that have occurred over the last 30 years and discover how they have 
+                impacted us. Walk through the known technical details of how the hacks were pulled off, review the impact 
+                of the hacks and how they affected user information security and privacy, and discuss how the hacks have 
+                led to changes in security controls we implement to protect against future hacks.
+            </p>
+        </div>
+    </div>
+
+    <div id="11r1" class="modal" onclick="hide_modal('11r1')">
+        <div class="modal-content">
+            <p class="m-title">Context Matters: How to Become the Cyber Detective of Your Favorite Noir Film</p>
+            <p class="m-spacetime">
+                11:00am Room 1, Mitchell Broadwater
+            </p>
+            <p>
+                Do you want to become a modern day, cyber noir-style detective? Following your hunches through the streets 
+                until you find the answer to the crime. Are you intimidated to start in cyber, and don't see yourself as 
+                having any skills to get started? This talk is for you, as a new trainee in the world of online security, 
+                allow me to enlighten you as to how you are qualified to pursue the cyber job of your dreams, through 
+                this talk "Context Matters".
+            </p>
+        </div>
+    </div>
+
+    <div id="12main" class="modal" onclick="hide_modal('12main')">
+        <div class="modal-content">
+            <p class="m-title">Rickroll Workshop</p>
+            <p class="m-spacetime">
+                12:00pm Main Room, Rab Beverly
+            </p>
+            <p>
+                Have you ever thought Charles at the office needs to come down a peg? Does your company Slack need a dose 
+                of anarchy to wake it up? Or do you think people are just too gullible when they see an interesting link? 
+                We can solve these problems and more with the classic Rickroll... a tradition almost as old as the 
+                whoopee cushion. Using only the most basic tools and protocols, we'll build up layers of deception to sew 
+                the seeds of anarchy, horrify seasoned CISOs, and stop indiscriminate link-clickers in their trackballs.
+            </p>
+        </div>
+    </div>
+
+    <div id="12r1" class="modal" onclick="hide_modal('12r1')">
+        <div class="modal-content">
+            <p class="m-title">Removing the Human Factor From Phishing</p>
+            <p class="m-spacetime">
+                12:00pm Main Room, Michael Ferree
+            </p>
+            <p>
+                AI is leading the fight to protect the modern workforce from phishing and human hacking across all 
+                digital channels and with its partners to protect the world’s internet users from targeted phishing. 
+                AI utilizes patented technology to detect zero-hour phishing threats.
+            </p>
+        </div>
+    </div>
+
+    <div id="1main" class="modal" onclick="hide_modal('1main')">
+        <div class="modal-content">
+            <p class="m-title">Cloud Security Best Practices</p>
+            <p class="m-spacetime">
+                1:00pm Main Room, Thad Wellin
+            </p>
+            <p>
+                This presentation will show you how to secure an organization's data in cloud. The focus will be on 
+                preserving the confidentiality, integrity and availability of the platform and the data contained within. 
+                The presentation will also address governance, risk management and compliance for organizations that have 
+                the requirements of a security framework.
+            </p>
+        </div>
+    </div>
+
+    <div id="1r1" class="modal" onclick="hide_modal('1r1')">
+        <div class="modal-content">
+            <p class="m-title">Critical Security Controls: Not From SANS, Not 20, Discuss!!</p>
+            <p class="m-spacetime">
+                1:00pm Room 1, Michael Brown
+            </p>
+            <p>
+                Many people have probably heard of the “SANS Top 20”, the old name for the Critical Security Controls, properly 
+                the CIS Controls.  Thing is, they aren’t managed by SANS (since 2013), and with the latest version (8, out in 2021) 
+                are no longer 20!  But do you know what they are?  How they can be used in building or assessing your security 
+                program? 
+            </p>
+        </div>
+    </div>
+
+    <div id="2main" class="modal" onclick="hide_modal('2main')">
+        <div class="modal-content">
+            <p class="m-title">The Journey of Security Automation</p>
+            <p class="m-spacetime">
+                2:00pm Main Room, Peter Luo
+            </p>
+            <p>
+                Security teams are constantly burnt out due to the unlimited amount of investigation and operational tasks. It becomes 
+                essential for the security defense team to leverage automation to improve the efficiency of the SOC. In this talk, 
+                I would like to share: 
+                <ul>
+                    <li>the open-source automation tool Node-red</li>
+                    <li>hands-on use cases demo with Node-red</li>
+                    <li>the difference between AI and Automation and AI use cases</li>
+                    <li>the journey of security automation and security maturity level</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div id="2r1" class="modal" onclick="hide_modal('2r1')">
+        <div class="modal-content">
+            <p class="m-title">Mind the Gap: Becoming a Product Manager in InfoSec</p>
+            <p class="m-spacetime">
+                2:00pm Room 1, Daniel Fernandez
+            </p>
+            <p>
+                Externally, information security can be perceived as exclusively about penetration testing, threat hunting, incident 
+                response, or security policy. However, there are countless possible careers, many of which remain unfilled. As security 
+                goes from a compliance requirement to a competitive advantage, enterprise software companies and their customers must consider 
+                their security as a product. Prioritizing what is most valuable to customers given resource constraints and thinking about 
+                security strategically are some of the elements a product mindset brings. Even if organizations buy vs. build, they must 
+                ensure all the pieces work together. Transitioning to security as an existing product manager or becoming a product manager 
+                focused on security takes some adjustment. Essential skills are needed to be a product manager, which can be relevant across 
+                many other professions. With those skills and guidance on navigating the information security industry, many professionals 
+                can make the transition and bridge this less known talent gap.
+            </p>
+        </div>
+    </div>
+
+    <div id="2r2" class="modal" onclick="hide_modal('2r2')">
+        <div class="modal-content">
+            <p class="m-title">How to Build a Cyber Home Lab</p>
+            <p class="m-spacetime">
+                2:00pm Room 2, Ivan Marchany
+            </p>
+            <p>
+                In this presentation, I’ll be covering a wide range of topics on how to build a successful home lab. Topics 
+                include, Hardware, Networking, Virtualization, Network Monitoring IDS/IPS, Vulnerability Management, Firewalls, 
+                Security Information and Event Management (SIEM) Tools, and Virtual Machines. The slides will include links for 
+                the audience who is interested in learning about the tool or equipment and how they can obtain it. With all these 
+                topics, the audience will have an in-depth knowledge of tools and equipment they can select when building a home 
+                lab and showcase to future employers. Having a home lab is crucial for advancing your career in Cybersecurity. 
+                It is also a great way to gain the hands-on experience and talking points needed to succeed at job interviews. 
+                The goal is to help people get into Cybersecurity and go above and beyond on their career.
+            </p>
+        </div>
+    </div>
+
+    <div id="3main" class="modal" onclick="hide_modal('3main')">
+        <div class="modal-content">
+            <p class="m-title">Closing Keynote</p>
+            <p class="m-spacetime">
+                3:o09m M@1n R00m, 351d35 5t. P373 73@m
+            </p>
+            <p>
+                Wherein we conclude this event, and perhaps announce aft3r-part1e5, awards, the answers to great mysteries, 
+                or other things.
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="menu.js"></script>
+<script src="main.js"></script>
+</html>

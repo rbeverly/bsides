@@ -1,0 +1,8 @@
+A quick site to host BSides St Pete 2022 schedule and some links.
+
+Testing Notes:
+For testing locally, you can either run a web server, or disable strict CORS policy in the browser. 
+For FF the way to do this is in about:config, then search for 'strict_origin' and disable it. 
+Remember to re-enable it (or have a separate FF isolated from the web) or else the security gods will frown on you later, maybe.
+The reason any of this is necessary is because there's a plain JS fetch() to insert menus, and the CORS policy
+only likes that in HTTP/HTTPS ... testing locally without a web server, you're using file:/// so yeah.
